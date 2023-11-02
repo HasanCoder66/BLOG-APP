@@ -34,32 +34,32 @@ export default function Login() {
       });
   };
   return (
-    <div classNameName="login">
-      <div classNameName="loginWrapper">
-        <div classNameName="loginLeft">
-          <h3 classNameName="loginLogo">Tech Blog App</h3>
-          <span classNameName="loginDesc">Connect with us to see new blogs.</span>
+    <div className="login">
+      <div className="loginWrapper">
+        <div className="loginLeft">
+          <h3 className="loginLogo">Tech Blog App</h3>
+          <span className="loginDesc">Connect with us to see new blogs.</span>
         </div>
-        <div classNameName="loginRight">
-          <div classNameName="loginBox">
+        <div className="loginRight">
+          <div className="loginBox">
             <input
               placeholder="Email Address"
               type="email"
-              classNameName="loginInput"
+              className="loginInput"
               ref={email}
               />
             <input
               ref={password}
               placeholder=" Password"
               type="password"
-              classNameName="loginInput"
+              className="loginInput"
             />
-            <button classNameName="loginButton" onClick={loginHandler}>
+            <button className="loginButton" onClick={loginHandler}>
               {" "}
               Log In
             </button>
-            <span classNameName="loginForgot">Forgot Password</span>
-            <button classNameName="loginRegisterButton">
+            <span className="loginForgot">Forgot Password</span>
+            <button className="loginRegisterButton">
               <Link to={"/signup"}>Create a new Account</Link>
             </button>
           </div>

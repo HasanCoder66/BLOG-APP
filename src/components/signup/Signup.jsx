@@ -1,7 +1,6 @@
 import "./signup.css";
 import { Link } from "react-router-dom";
 import {  getAuth , createUserWithEmailAndPassword } from "../../firebase/config";
-// import { getAuth, createUserWithEmailAndPassword } from "../../firebase/config";
 import React, { useRef } from "react";
 
 export default function Signup() {
@@ -40,43 +39,43 @@ export default function Signup() {
       });
   };
   return (
-    <div classNameName="login">
-      <div classNameName="loginWrapper">
-        <div classNameName="loginLeft">
-          <h3 classNameName="loginLogo">Tech Blog App</h3>
-          <span classNameName="loginDesc">Here is you Site to create a blog.</span>
+    <div className="login">
+      <div className="loginWrapper">
+        <div className="loginLeft">
+          <h3 className="loginLogo">Tech Blog App</h3>
+          <span className="loginDesc">Here is you Site to create a blog.</span>
         </div>
-        <div classNameName="loginRight">
-          <div classNameName="loginBox">
+        <div className="loginRight">
+          <div className="loginBox">
             <input
               placeholder="UserName"
               type="text"
-              classNameName="loginInput"
+              className="loginInput"
               ref={userName}
             />
             <input
               placeholder="Email Address"
               type="email"
-              classNameName="loginInput"
+              className="loginInput"
               ref={email}
             />
             <input
               placeholder=" Password"
               type="password"
-              classNameName="loginInput"
+              className="loginInput"
               ref={password}
             />
             <input
               placeholder="Confirm Password "
               type="password"
-              classNameName="loginInput"
+              className="loginInput"
               ref={cPassword}
             />
-            <button classNameName="loginButton" onClick={signupHandler}>
+            <button className="loginButton" onClick={signupHandler}>
               {" "}
               Sign Up
             </button>
-            <button classNameName="loginRegisterButton">
+            <button className="loginRegisterButton">
               <Link to={"/login"}>Login into Account</Link>
             </button>
           </div>

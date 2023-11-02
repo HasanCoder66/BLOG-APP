@@ -1,0 +1,25 @@
+.header{
+    height: 4rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 0rem 2rem;
+    background-color: #9862fe;
+    align-items: center;
+  }
+  .headertitle{
+    text-decoration: none;
+    color: white;
+  }
+  .header h2{
+    color: var(--backgroundColor);
+    font-size: 2rem;
+  }
+  .header button{
+    padding: .5rem 1rem;
+    border-radius: .5rem;
+    text-transform: uppercase;
+    background-color: var(--backgroundColor);
+    color: var(--assentColor);
+  }
+
+ 

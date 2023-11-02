@@ -1,0 +1,13 @@
+.perblog{
+border: 1px solid;
+padding: 1rem;
+border-radius: 0.5rem;
+display: flex;
+flex-direction: column;
+gap: 0.5rem;
+transition: all ease 0.5s;
+margin: 2rem 1rem;
+margin: 10px;
+background-color: #1c1e29;
+color: white;
+}
