@@ -3,7 +3,7 @@
     display: flex;
     justify-content: space-between;
     padding: 0rem 2rem;
-    background-color: #9862fe;
+    background-color: #344966;
     align-items: center;
   }
   .headertitle{
@@ -22,4 +22,10 @@
     color: var(--assentColor);
   }
 
- 
+ .heading{
+  color: white;
+  font-size: xx-large;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+ }

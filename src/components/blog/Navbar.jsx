@@ -1,50 +1,27 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./navbar.css";
+import Home from "../home/Home";
 function Navbar() {
-  const [modal , setModal] = useState(false)
-
-  const [isModalOpen, setModalOpen] = useState(false);
-
   const openModal = () => {
     setModalOpen(true);
-  }
+  };
 
   const closeModal = () => {
     setModalOpen(false);
-  }
-  
+  };
+
   return (
-    <div style={{backgroundColor:'##9862fe'}} className="container">
+    <div className="container">
       <div className="header">
         <Link className="headertitle" to={"/"}>
-          <h2>Blogs</h2>
+          <h2>Tech Blogs App</h2>
         </Link>
-        <Link >
-          <button className="button" onClick={ () => setModal(true)}>Create a Blog</button>
-        </Link>
+  <Link to={"/"}> <button style={{color:"white" , border:'2px solid white', cursor:"pointer"}}> Home</button></Link>
       </div>
+        <h4 className="heading"> Create You Own Blogs!</h4>
     </div>
   );
-  
 }
 
 export default Navbar;
-
-
-
-
-function Modal({ isOpen, onClose, children }) {
-  if (!isOpen) {
-    return null;
-  }
-
-  return (
-    <div className="modal-overlay">
-      <div className="modal">
-        <button className="close-button" onClick={onClose}>X</button>
-        {children}
-      </div>
-    </div>
-  );
-}

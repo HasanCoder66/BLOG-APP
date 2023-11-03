@@ -1,13 +1,54 @@
-.perblog{
-border: 1px solid;
-padding: 1rem;
-border-radius: 0.5rem;
-display: flex;
-flex-direction: column;
-gap: 0.5rem;
-transition: all ease 0.5s;
-margin: 2rem 1rem;
-margin: 10px;
-background-color: #1c1e29;
-color: white;
+.parent {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px;
+    padding: 50px;
+    gap: 25px;
+}
+
+.userInput {
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid gray;
+    font-size: 18px;
+    outline: none;
+    padding-left: 20px;
+}
+.blogInput {
+    outline: none;
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid gray;
+    font-size: 18px;
+    padding-left: 20px;
+}
+.blogDescInput {
+    outline: none;
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid gray;
+    font-size: 18px;
+    padding-left: 20px;
+}
+.blogTitleInput {
+    outline: none;
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid gray;
+    font-size: 18px;
+    padding-left: 20px;
+}
+
+.button{
+    margin-top: 15px;
+    width: 150px;
+    height: 45px;
+    border-radius: 10px;
+    outline: none;
+    color: white;
+    background-color: #344966 ;
+    cursor: pointer;
+    border: none;
+    border: 2px solid white;
 }

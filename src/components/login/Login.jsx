@@ -2,8 +2,12 @@ import "./login.css";
 import { Link } from "react-router-dom";
 import { getAuth,signInWithEmailAndPassword } from "../../firebase/config";
 import { useRef } from "react";
+import { useNavigate } from "react-router-dom";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 export default function Login() {
-  
+  const navigate = useNavigate()
   const auth = getAuth();
   const email = useRef();
   const password = useRef();
@@ -21,9 +25,12 @@ export default function Login() {
         const user = userCredential.user;
         // ...
         if(user) {
-          window.location.href = '/'
+          toast.success("user Login successfully");
+          setTimeout(() => {
+            navigate("/");
+          }, 5000);
         }else{
-          alert('yahi ruk jaou jani')
+          toast.failed("user not Login successfully");
         }
       })
       .catch((error) => {
@@ -59,12 +66,15 @@ export default function Login() {
               Log In
             </button>
             <span className="loginForgot">Forgot Password</span>
+            <Link to={"/signup"}>
             <button className="loginRegisterButton">
-              <Link to={"/signup"}>Create a new Account</Link>
+              Create a new Account
             </button>
+            </Link>
           </div>
         </div>
       </div>
+      <ToastContainer />
     </div>
   );
 }

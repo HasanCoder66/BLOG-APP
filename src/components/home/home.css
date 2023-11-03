@@ -1,10 +1,12 @@
 * {
     margin: 0;
+    text-decoration:  none;
   }
+
   .topBarContainer {
     height: 50px;
     width: 100%;
-    background-color: #FF5733;
+    background-color: #344966;
     display: flex;
     /* justify-content: space-around; */
     align-items: center;
@@ -67,6 +69,10 @@
     margin-right: 10px;
     cursor: pointer;
   }
+  .topBarLink {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+   
+  }
   
   
   .topBarIcons {
@@ -80,32 +86,17 @@
     position: relative;
   }
   
-  .topBarIconBadge {
-    width: 13px;
-    height: 13px;
-    background-color: red;
-    color: white;
-    border-radius: 50%;
-    position: absolute;
-    top: -8px;
-    right: -8px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 10px;
-  }
   .topBarImg {
     width: 32px;
     height: 32px;
     border-radius: 50%;
     object-fit: cover;
-    cursor: pointer;
     
   }
   
   .wrapper{
     padding: 10px;
-    background-color: #FF5733;
+    background-color: #4F5D69    ;
     margin-bottom: 20px;
     margin-top: 20px;
     color: white;
